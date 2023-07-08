@@ -54,6 +54,29 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+
+        <span class="nav__sub-title">Careers</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "books" %}
+                        <li><a href="/categories/books" class="">도서 추천 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "certificates" %}
+                        <li><a href="/categories/certificates" class="">자격증 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "codes" %}
+                        <li><a href="/categories/cote" class="">코딩 테스트 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
       </li>
   </ul>
 </nav>
